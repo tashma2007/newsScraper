@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Scraping With Mongoose</title>
+    <style>
+        body {
+            background-color: #F2F6D0
+        }
+
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5%;
+        }
+
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 60%;
+            height: 700px;
+        }
+
+        #notes {
+            float: right;
+            width: 30%;
+        }
+
+        textarea,
+        input {
+            display: block;
+            width: 100%;
+            background-color: #FCF5C7;
+        }
+
+        input {
+            height: 36px;
+            font-size: 24px;
+        }
+
+        textarea {
+            height: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Mongo Scraper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Saved Articles</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-danger btn-lg">Large button</button>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <h1>Note Scraper</h1>
+        <h2><i>If you can do this...the homework should be no problem.</i></h2>
+        <div id="articles"></div>
+        <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
